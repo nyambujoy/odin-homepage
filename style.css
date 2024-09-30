@@ -15,12 +15,13 @@
     --lightBlue: #1B1A55;
     --evenlighter: #535C91;
     --lightest: #9290C3;
-    --homework-blue: #2596be;
+    --homework-blue: #0b5671;
 
 }
 
 body {
     font-family: "Playfair Display", serif;
+    width: 100vw;
 }
 
 .container {
@@ -98,11 +99,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+
 }
 
 .proj {
     padding: 50px;
-    border: 2px solid black;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* max-height: 900px; */
 }
 
 .proj #one {
@@ -110,7 +114,83 @@ body {
     background-position: center;
 }
 
-.proj .screen {
+.proj .top {
+    display: flex;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.proj .top h2 {
+    padding-right: 150px;
+}
+
+.proj .top a {
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+    /* padding-left: 50px; */
+}
+
+
+.proj .screen img {
+    height: 500px;
+    width: 400px;
+    object-fit: fill;
+}
+
+.proj .bottom {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    padding: 10px;
+
+}
+
+#foot {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    background-color: #2596be;
+    gap: 100px;
+    justify-content: space-around;
+    color: #fff;
     padding: 20px;
-    background-color: #535C91;
+}
+
+#foot .contact h2 {
+    font-size: 2rem;
+
+}
+
+#foot .contact p {
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#foot .contact span {
+    font-size: 1.4rem;
+
+}
+
+#foot .contact svg {
+    color: #fff;
+}
+
+
+.moree {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+
+.moree a {
+    text-decoration: none;
+    color: #070F2B;
+    padding: 20px;
+}
+
+#foot .contimage img {
+    object-fit: fill;
+    height: 300px;
+
+
 }
